@@ -36,8 +36,8 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.buttonWissen = new System.Windows.Forms.Button();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -120,6 +120,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Typ hier";
             // 
+            // buttonWissen
+            // 
+            this.buttonWissen.Location = new System.Drawing.Point(6, 118);
+            this.buttonWissen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buttonWissen.Name = "buttonWissen";
+            this.buttonWissen.Size = new System.Drawing.Size(160, 22);
+            this.buttonWissen.TabIndex = 7;
+            this.buttonWissen.Text = "Wis Alles";
+            this.buttonWissen.UseVisualStyleBackColor = true;
+            this.buttonWissen.Click += new System.EventHandler(this.buttonWissen_Click);
+            // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
@@ -131,17 +142,6 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "1 x";
             this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // buttonWissen
-            // 
-            this.buttonWissen.Location = new System.Drawing.Point(6, 118);
-            this.buttonWissen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonWissen.Name = "buttonWissen";
-            this.buttonWissen.Size = new System.Drawing.Size(160, 22);
-            this.buttonWissen.TabIndex = 7;
-            this.buttonWissen.Text = "Wis Alles";
-            this.buttonWissen.UseVisualStyleBackColor = true;
-            this.buttonWissen.Click += new System.EventHandler(this.buttonWissen_Click);
             // 
             // label1
             // 
