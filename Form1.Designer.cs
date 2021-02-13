@@ -29,137 +29,137 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.buttonStart = new System.Windows.Forms.Button();
-            this.buttonStop = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.ButtonStart = new System.Windows.Forms.Button();
+            this.ButtonStop = new System.Windows.Forms.Button();
+            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.Timer1 = new System.Windows.Forms.Timer(this.components);
+            this.RadioButton1 = new System.Windows.Forms.RadioButton();
+            this.RadioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonWissen = new System.Windows.Forms.Button();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.ButtonWissen = new System.Windows.Forms.Button();
+            this.RadioButton3 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // buttonStart
+            // ButtonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(6, 89);
-            this.buttonStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(75, 22);
-            this.buttonStart.TabIndex = 0;
-            this.buttonStart.Text = "Start";
-            this.buttonStart.UseVisualStyleBackColor = true;
-            this.buttonStart.Click += new System.EventHandler(this.button1_Click);
+            this.ButtonStart.Location = new System.Drawing.Point(8, 110);
+            this.ButtonStart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ButtonStart.Name = "ButtonStart";
+            this.ButtonStart.Size = new System.Drawing.Size(105, 27);
+            this.ButtonStart.TabIndex = 0;
+            this.ButtonStart.Text = "Start";
+            this.ButtonStart.UseVisualStyleBackColor = true;
+            this.ButtonStart.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // buttonStop
+            // ButtonStop
             // 
-            this.buttonStop.Location = new System.Drawing.Point(91, 89);
-            this.buttonStop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(75, 22);
-            this.buttonStop.TabIndex = 1;
-            this.buttonStop.Text = "Stop";
-            this.buttonStop.UseVisualStyleBackColor = true;
-            this.buttonStop.Click += new System.EventHandler(this.button2_Click);
+            this.ButtonStop.Location = new System.Drawing.Point(121, 110);
+            this.ButtonStop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ButtonStop.Name = "ButtonStop";
+            this.ButtonStop.Size = new System.Drawing.Size(100, 27);
+            this.ButtonStop.TabIndex = 1;
+            this.ButtonStop.Text = "Stop";
+            this.ButtonStop.UseVisualStyleBackColor = true;
+            this.ButtonStop.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // textBox1
+            // TextBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 20);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 63);
-            this.textBox1.TabIndex = 2;
+            this.TextBox1.Location = new System.Drawing.Point(8, 25);
+            this.TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TextBox1.Multiline = true;
+            this.TextBox1.Name = "TextBox1";
+            this.TextBox1.Size = new System.Drawing.Size(132, 77);
+            this.TextBox1.TabIndex = 2;
             // 
-            // timer1
+            // Timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // radioButton1
+            // RadioButton1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(112, 20);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(48, 17);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "0,2 x";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RadioButton1.AutoSize = true;
+            this.RadioButton1.Location = new System.Drawing.Point(149, 25);
+            this.RadioButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.RadioButton1.Name = "RadioButton1";
+            this.RadioButton1.Size = new System.Drawing.Size(59, 21);
+            this.RadioButton1.TabIndex = 4;
+            this.RadioButton1.TabStop = true;
+            this.RadioButton1.Text = "0,2 x";
+            this.RadioButton1.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // RadioButton2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(112, 43);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(48, 17);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "0,5 x";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.RadioButton2.AutoSize = true;
+            this.RadioButton2.Location = new System.Drawing.Point(149, 53);
+            this.RadioButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.RadioButton2.Name = "RadioButton2";
+            this.RadioButton2.Size = new System.Drawing.Size(59, 21);
+            this.RadioButton2.TabIndex = 5;
+            this.RadioButton2.TabStop = true;
+            this.RadioButton2.Text = "0,5 x";
+            this.RadioButton2.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.buttonWissen);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.ButtonWissen);
+            this.groupBox1.Controls.Add(this.RadioButton3);
+            this.groupBox1.Controls.Add(this.TextBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.buttonStart);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.buttonStop);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Controls.Add(this.RadioButton2);
+            this.groupBox1.Controls.Add(this.ButtonStart);
+            this.groupBox1.Controls.Add(this.RadioButton1);
+            this.groupBox1.Controls.Add(this.ButtonStop);
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(172, 148);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(229, 182);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Typ hier";
             // 
-            // buttonWissen
+            // ButtonWissen
             // 
-            this.buttonWissen.Location = new System.Drawing.Point(6, 118);
-            this.buttonWissen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonWissen.Name = "buttonWissen";
-            this.buttonWissen.Size = new System.Drawing.Size(160, 22);
-            this.buttonWissen.TabIndex = 7;
-            this.buttonWissen.Text = "Wis Alles";
-            this.buttonWissen.UseVisualStyleBackColor = true;
-            this.buttonWissen.Click += new System.EventHandler(this.buttonWissen_Click);
+            this.ButtonWissen.Location = new System.Drawing.Point(8, 145);
+            this.ButtonWissen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ButtonWissen.Name = "ButtonWissen";
+            this.ButtonWissen.Size = new System.Drawing.Size(213, 27);
+            this.ButtonWissen.TabIndex = 7;
+            this.ButtonWissen.Text = "Wis Alles";
+            this.ButtonWissen.UseVisualStyleBackColor = true;
+            this.ButtonWissen.Click += new System.EventHandler(this.ButtonWissen_Click);
             // 
-            // radioButton3
+            // RadioButton3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(112, 66);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(39, 17);
-            this.radioButton3.TabIndex = 6;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "1 x";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.RadioButton3.AutoSize = true;
+            this.RadioButton3.Location = new System.Drawing.Point(149, 81);
+            this.RadioButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.RadioButton3.Name = "RadioButton3";
+            this.RadioButton3.Size = new System.Drawing.Size(47, 21);
+            this.RadioButton3.TabIndex = 6;
+            this.RadioButton3.TabStop = true;
+            this.RadioButton3.Text = "1 x";
+            this.RadioButton3.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(109, 0);
+            this.label1.Location = new System.Drawing.Point(145, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(76, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Snelheden";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(199, 171);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(265, 210);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
@@ -175,15 +175,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonStart;
-        private System.Windows.Forms.Button buttonStop;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Button ButtonStart;
+        private System.Windows.Forms.Button ButtonStop;
+        private System.Windows.Forms.TextBox TextBox1;
+        private System.Windows.Forms.Timer Timer1;
+        private System.Windows.Forms.RadioButton RadioButton1;
+        private System.Windows.Forms.RadioButton RadioButton2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Button buttonWissen;
+        private System.Windows.Forms.RadioButton RadioButton3;
+        private System.Windows.Forms.Button ButtonWissen;
         private System.Windows.Forms.Label label1;
     }
 }

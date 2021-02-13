@@ -20,53 +20,58 @@ namespace SpamBot
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            radioButton1.Checked = true;
+            RadioButton1.Checked = true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.TextLength >= 1)
+            if (TextBox1.TextLength >= 1)
             {
-                if (radioButton1.Checked)
+                if (RadioButton1.Checked)
                 {
-                    timer1.Interval = 200;
-                    timer1.Start();
+                    Timer1.Interval = 200;
+                    Timer1.Start();
                 }
-
-                else if (radioButton2.Checked)
+                else if (RadioButton2.Checked)
                 {
-                    timer1.Interval = 500;
-                    timer1.Start();
+                    Timer1.Interval = 500;
+                    Timer1.Start();
                 }
-
-                else if (radioButton3.Checked)
+                else if (RadioButton3.Checked)
                 {
-                    timer1.Interval = 1000;
-                    timer1.Start();
+                    Timer1.Interval = 1000;
+                    Timer1.Start();
                 }
             }
-
             else
             {
                 MessageBox.Show("Ongeldige waarde", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
-            timer1.Stop();
-            MessageBox.Show("Spammen is gestopt", "Gestopt");
+            if (Timer1.Enabled == false)
+            {
+                MessageBox.Show("Spammen is al gestopt", "Error");
+            }
+            else
+            {
+                Timer1.Stop();
+                MessageBox.Show("Spammen is gestopt", "Gestopt");
+            }
         }
 
-        private void buttonWissen_Click(object sender, EventArgs e)
+        private void ButtonWissen_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
-            textBox1.Focus();
-            radioButton1.Checked = true;        }
+            TextBox1.Clear();
+            TextBox1.Focus();
+            RadioButton1.Checked = true;        
+        }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e)
         {
-            SendKeys.Send(textBox1.Text);
+            SendKeys.Send(TextBox1.Text);
             SendKeys.Send("{ENTER}");
         }
     }
