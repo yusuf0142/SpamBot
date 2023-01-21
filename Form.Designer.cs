@@ -30,6 +30,7 @@ namespace SpamBot
             this.OptionsMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.CloseMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.Seperator = new System.Windows.Forms.ToolStripSeparator();
+            this.tutorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.InfoMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.SocialsMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.GithubMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
@@ -144,6 +145,7 @@ namespace SpamBot
             this.OptionsMenuStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CloseMenuStrip,
             this.Seperator,
+            this.tutorialToolStripMenuItem,
             this.InfoMenuStrip});
             this.OptionsMenuStrip.Name = "OptionsMenuStrip";
             this.OptionsMenuStrip.Size = new System.Drawing.Size(61, 20);
@@ -152,20 +154,27 @@ namespace SpamBot
             // CloseMenuStrip
             // 
             this.CloseMenuStrip.Name = "CloseMenuStrip";
-            this.CloseMenuStrip.Size = new System.Drawing.Size(102, 22);
+            this.CloseMenuStrip.Size = new System.Drawing.Size(180, 22);
             this.CloseMenuStrip.Text = "Close";
             this.CloseMenuStrip.Click += new System.EventHandler(this.CloseMenuStrip_Click);
             // 
             // Seperator
             // 
             this.Seperator.Name = "Seperator";
-            this.Seperator.Size = new System.Drawing.Size(99, 6);
+            this.Seperator.Size = new System.Drawing.Size(177, 6);
+            // 
+            // tutorialToolStripMenuItem
+            // 
+            this.tutorialToolStripMenuItem.Name = "tutorialToolStripMenuItem";
+            this.tutorialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tutorialToolStripMenuItem.Text = "Tutorial";
+            this.tutorialToolStripMenuItem.Click += new System.EventHandler(this.TutorialMenuStrip_Click);
             // 
             // InfoMenuStrip
             // 
             this.InfoMenuStrip.Name = "InfoMenuStrip";
-            this.InfoMenuStrip.Size = new System.Drawing.Size(102, 22);
-            this.InfoMenuStrip.Text = "Info";
+            this.InfoMenuStrip.Size = new System.Drawing.Size(180, 22);
+            this.InfoMenuStrip.Text = "Usefull info";
             this.InfoMenuStrip.Click += new System.EventHandler(this.InfoMenuStrip_Click);
             // 
             // SocialsMenuStrip
@@ -180,14 +189,14 @@ namespace SpamBot
             // GithubMenuStrip
             // 
             this.GithubMenuStrip.Name = "GithubMenuStrip";
-            this.GithubMenuStrip.Size = new System.Drawing.Size(110, 22);
+            this.GithubMenuStrip.Size = new System.Drawing.Size(180, 22);
             this.GithubMenuStrip.Text = "Github";
             this.GithubMenuStrip.Click += new System.EventHandler(this.GithubMenuStrip_Click);
             // 
             // TwitterMenuStrip
             // 
             this.TwitterMenuStrip.Name = "TwitterMenuStrip";
-            this.TwitterMenuStrip.Size = new System.Drawing.Size(110, 22);
+            this.TwitterMenuStrip.Size = new System.Drawing.Size(180, 22);
             this.TwitterMenuStrip.Text = "Twitter";
             this.TwitterMenuStrip.Click += new System.EventHandler(this.TwitterMenuStrip_Click);
             // 
@@ -295,6 +304,7 @@ namespace SpamBot
         private System.Windows.Forms.ToolStripSeparator Seperator;
         private System.Windows.Forms.ToolStripMenuItem InfoMenuStrip;
         private System.Windows.Forms.Timer TimerLength;
+        private System.Windows.Forms.ToolStripMenuItem tutorialToolStripMenuItem;
     }
 }
 
