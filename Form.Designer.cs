@@ -1,16 +1,11 @@
-﻿namespace SpamBot
+﻿using System;
+
+namespace SpamBot
 {
     partial class Form
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,25 +16,35 @@
         }
 
         #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
             this.ButtonStart = new System.Windows.Forms.Button();
             this.ButtonStop = new System.Windows.Forms.Button();
             this.TextBox = new System.Windows.Forms.TextBox();
-            this.Timer = new System.Windows.Forms.Timer(this.components);
-            this.RadioButton1 = new System.Windows.Forms.RadioButton();
-            this.RadioButton2 = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.ButtonDefault = new System.Windows.Forms.Button();
-            this.RadioButton3 = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.LabelSpamLength = new System.Windows.Forms.Label();
+            this.SpamLengthTrackBar = new System.Windows.Forms.TrackBar();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
+            this.OptionsMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.CloseMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.Seperator = new System.Windows.Forms.ToolStripSeparator();
+            this.InfoMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.SocialsMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.GithubMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.TwitterMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.SpamSpeedTrackBar = new System.Windows.Forms.TrackBar();
+            this.GroupBox2 = new System.Windows.Forms.GroupBox();
+            this.LabelSpamSpeed = new System.Windows.Forms.Label();
+            this.GroupBox3 = new System.Windows.Forms.GroupBox();
+            this.TimerLength = new System.Windows.Forms.Timer(this.components);
+            this.GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SpamLengthTrackBar)).BeginInit();
+            this.MenuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SpamSpeedTrackBar)).BeginInit();
+            this.GroupBox2.SuspendLayout();
+            this.GroupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // ButtonStart
@@ -70,55 +75,23 @@
             this.TextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TextBox.Multiline = true;
             this.TextBox.Name = "TextBox";
-            this.TextBox.Size = new System.Drawing.Size(132, 77);
+            this.TextBox.Size = new System.Drawing.Size(213, 77);
             this.TextBox.TabIndex = 2;
             // 
-            // Timer
+            // GroupBox1
             // 
-            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
-            // 
-            // RadioButton1
-            // 
-            this.RadioButton1.AutoSize = true;
-            this.RadioButton1.Location = new System.Drawing.Point(149, 25);
-            this.RadioButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.RadioButton1.Name = "RadioButton1";
-            this.RadioButton1.Size = new System.Drawing.Size(54, 20);
-            this.RadioButton1.TabIndex = 4;
-            this.RadioButton1.TabStop = true;
-            this.RadioButton1.Text = "0,2 x";
-            this.RadioButton1.UseVisualStyleBackColor = true;
-            // 
-            // RadioButton2
-            // 
-            this.RadioButton2.AutoSize = true;
-            this.RadioButton2.Location = new System.Drawing.Point(149, 53);
-            this.RadioButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.RadioButton2.Name = "RadioButton2";
-            this.RadioButton2.Size = new System.Drawing.Size(54, 20);
-            this.RadioButton2.TabIndex = 5;
-            this.RadioButton2.TabStop = true;
-            this.RadioButton2.Text = "0,5 x";
-            this.RadioButton2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.ButtonDefault);
-            this.groupBox1.Controls.Add(this.RadioButton3);
-            this.groupBox1.Controls.Add(this.TextBox);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.RadioButton2);
-            this.groupBox1.Controls.Add(this.ButtonStart);
-            this.groupBox1.Controls.Add(this.RadioButton1);
-            this.groupBox1.Controls.Add(this.ButtonStop);
-            this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(229, 182);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Type Here";
+            this.GroupBox1.Controls.Add(this.ButtonDefault);
+            this.GroupBox1.Controls.Add(this.TextBox);
+            this.GroupBox1.Controls.Add(this.ButtonStart);
+            this.GroupBox1.Controls.Add(this.ButtonStop);
+            this.GroupBox1.Location = new System.Drawing.Point(13, 29);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.GroupBox1.Name = "GroupBox1";
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.GroupBox1.Size = new System.Drawing.Size(230, 182);
+            this.GroupBox1.TabIndex = 6;
+            this.GroupBox1.TabStop = false;
+            this.GroupBox1.Text = "Type Here";
             // 
             // ButtonDefault
             // 
@@ -131,45 +104,172 @@
             this.ButtonDefault.UseVisualStyleBackColor = true;
             this.ButtonDefault.Click += new System.EventHandler(this.ButtonDefault_Click);
             // 
-            // RadioButton3
+            // LabelSpamLength
             // 
-            this.RadioButton3.AutoSize = true;
-            this.RadioButton3.Location = new System.Drawing.Point(149, 81);
-            this.RadioButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.RadioButton3.Name = "RadioButton3";
-            this.RadioButton3.Size = new System.Drawing.Size(44, 20);
-            this.RadioButton3.TabIndex = 6;
-            this.RadioButton3.TabStop = true;
-            this.RadioButton3.Text = "1 x";
-            this.RadioButton3.UseVisualStyleBackColor = true;
+            this.LabelSpamLength.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F);
+            this.LabelSpamLength.Location = new System.Drawing.Point(9, 18);
+            this.LabelSpamLength.Name = "LabelSpamLength";
+            this.LabelSpamLength.Size = new System.Drawing.Size(126, 20);
+            this.LabelSpamLength.TabIndex = 10;
+            this.LabelSpamLength.Text = "1 second";
+            this.LabelSpamLength.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // SpamLengthTrackBar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(145, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 16);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Spam Speed";
+            this.SpamLengthTrackBar.Location = new System.Drawing.Point(6, 41);
+            this.SpamLengthTrackBar.Maximum = 60;
+            this.SpamLengthTrackBar.Minimum = 1;
+            this.SpamLengthTrackBar.Name = "SpamLengthTrackBar";
+            this.SpamLengthTrackBar.Size = new System.Drawing.Size(129, 45);
+            this.SpamLengthTrackBar.TabIndex = 8;
+            this.SpamLengthTrackBar.TickFrequency = 3;
+            this.SpamLengthTrackBar.Value = 1;
+            this.SpamLengthTrackBar.Scroll += new System.EventHandler(this.SpamLengthTrackBar_Scroll);
+            // 
+            // MenuStrip
+            // 
+            this.MenuStrip.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.MenuStrip.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F);
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.OptionsMenuStrip,
+            this.SocialsMenuStrip});
+            this.MenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.MenuStrip.Name = "MenuStrip";
+            this.MenuStrip.Size = new System.Drawing.Size(404, 24);
+            this.MenuStrip.TabIndex = 7;
+            this.MenuStrip.Text = "MenuStrip";
+            // 
+            // OptionsMenuStrip
+            // 
+            this.OptionsMenuStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CloseMenuStrip,
+            this.Seperator,
+            this.InfoMenuStrip});
+            this.OptionsMenuStrip.Name = "OptionsMenuStrip";
+            this.OptionsMenuStrip.Size = new System.Drawing.Size(61, 20);
+            this.OptionsMenuStrip.Text = "Options";
+            // 
+            // CloseMenuStrip
+            // 
+            this.CloseMenuStrip.Name = "CloseMenuStrip";
+            this.CloseMenuStrip.Size = new System.Drawing.Size(102, 22);
+            this.CloseMenuStrip.Text = "Close";
+            this.CloseMenuStrip.Click += new System.EventHandler(this.CloseMenuStrip_Click);
+            // 
+            // Seperator
+            // 
+            this.Seperator.Name = "Seperator";
+            this.Seperator.Size = new System.Drawing.Size(99, 6);
+            // 
+            // InfoMenuStrip
+            // 
+            this.InfoMenuStrip.Name = "InfoMenuStrip";
+            this.InfoMenuStrip.Size = new System.Drawing.Size(102, 22);
+            this.InfoMenuStrip.Text = "Info";
+            this.InfoMenuStrip.Click += new System.EventHandler(this.InfoMenuStrip_Click);
+            // 
+            // SocialsMenuStrip
+            // 
+            this.SocialsMenuStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.GithubMenuStrip,
+            this.TwitterMenuStrip});
+            this.SocialsMenuStrip.Name = "SocialsMenuStrip";
+            this.SocialsMenuStrip.Size = new System.Drawing.Size(54, 20);
+            this.SocialsMenuStrip.Text = "Socials";
+            // 
+            // GithubMenuStrip
+            // 
+            this.GithubMenuStrip.Name = "GithubMenuStrip";
+            this.GithubMenuStrip.Size = new System.Drawing.Size(110, 22);
+            this.GithubMenuStrip.Text = "Github";
+            this.GithubMenuStrip.Click += new System.EventHandler(this.GithubMenuStrip_Click);
+            // 
+            // TwitterMenuStrip
+            // 
+            this.TwitterMenuStrip.Name = "TwitterMenuStrip";
+            this.TwitterMenuStrip.Size = new System.Drawing.Size(110, 22);
+            this.TwitterMenuStrip.Text = "Twitter";
+            this.TwitterMenuStrip.Click += new System.EventHandler(this.TwitterMenuStrip_Click);
+            // 
+            // SpamSpeedTrackBar
+            // 
+            this.SpamSpeedTrackBar.LargeChange = 200;
+            this.SpamSpeedTrackBar.Location = new System.Drawing.Point(6, 41);
+            this.SpamSpeedTrackBar.Maximum = 1000;
+            this.SpamSpeedTrackBar.Minimum = 10;
+            this.SpamSpeedTrackBar.Name = "SpamSpeedTrackBar";
+            this.SpamSpeedTrackBar.Size = new System.Drawing.Size(129, 45);
+            this.SpamSpeedTrackBar.SmallChange = 10;
+            this.SpamSpeedTrackBar.TabIndex = 10;
+            this.SpamSpeedTrackBar.TickFrequency = 100;
+            this.SpamSpeedTrackBar.Value = 10;
+            this.SpamSpeedTrackBar.Scroll += new System.EventHandler(this.SpamSpeedTrackBar_Scroll);
+            // 
+            // GroupBox2
+            // 
+            this.GroupBox2.Controls.Add(this.LabelSpamSpeed);
+            this.GroupBox2.Controls.Add(this.SpamSpeedTrackBar);
+            this.GroupBox2.Location = new System.Drawing.Point(251, 29);
+            this.GroupBox2.Name = "GroupBox2";
+            this.GroupBox2.Size = new System.Drawing.Size(141, 92);
+            this.GroupBox2.TabIndex = 12;
+            this.GroupBox2.TabStop = false;
+            this.GroupBox2.Text = "Spam Speed";
+            // 
+            // LabelSpamSpeed
+            // 
+            this.LabelSpamSpeed.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F);
+            this.LabelSpamSpeed.Location = new System.Drawing.Point(6, 18);
+            this.LabelSpamSpeed.Name = "LabelSpamSpeed";
+            this.LabelSpamSpeed.Size = new System.Drawing.Size(129, 20);
+            this.LabelSpamSpeed.TabIndex = 12;
+            this.LabelSpamSpeed.Text = "1 message / 10 ms";
+            this.LabelSpamSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // GroupBox3
+            // 
+            this.GroupBox3.Controls.Add(this.SpamLengthTrackBar);
+            this.GroupBox3.Controls.Add(this.LabelSpamLength);
+            this.GroupBox3.Location = new System.Drawing.Point(251, 121);
+            this.GroupBox3.Name = "GroupBox3";
+            this.GroupBox3.Size = new System.Drawing.Size(141, 92);
+            this.GroupBox3.TabIndex = 13;
+            this.GroupBox3.TabStop = false;
+            this.GroupBox3.Text = "Spam Length";
+            // 
+            // TimerLength
+            // 
+            this.TimerLength.Tick += new System.EventHandler(this.TimerLength_Tick);
             // 
             // Form
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(265, 210);
-            this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.ClientSize = new System.Drawing.Size(404, 225);
+            this.Controls.Add(this.GroupBox3);
+            this.Controls.Add(this.GroupBox2);
+            this.Controls.Add(this.GroupBox1);
+            this.Controls.Add(this.MenuStrip);
+            this.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.MenuStrip;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Form";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SpamBot";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.Form_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.GroupBox1.ResumeLayout(false);
+            this.GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SpamLengthTrackBar)).EndInit();
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SpamSpeedTrackBar)).EndInit();
+            this.GroupBox2.ResumeLayout(false);
+            this.GroupBox2.PerformLayout();
+            this.GroupBox3.ResumeLayout(false);
+            this.GroupBox3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -177,14 +277,24 @@
 
         private System.Windows.Forms.Button ButtonStart;
         private System.Windows.Forms.Button ButtonStop;
-        private System.Windows.Forms.TextBox TextBox;
-        private System.Windows.Forms.Timer Timer;
-        private System.Windows.Forms.RadioButton RadioButton1;
-        private System.Windows.Forms.RadioButton RadioButton2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton RadioButton3;
         private System.Windows.Forms.Button ButtonDefault;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox TextBox;
+        private System.Windows.Forms.GroupBox GroupBox1;
+        private System.Windows.Forms.MenuStrip MenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem OptionsMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem CloseMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem SocialsMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem GithubMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem TwitterMenuStrip;
+        private System.Windows.Forms.TrackBar SpamLengthTrackBar;
+        private System.Windows.Forms.Label LabelSpamLength;
+        private System.Windows.Forms.TrackBar SpamSpeedTrackBar;
+        private System.Windows.Forms.GroupBox GroupBox2;
+        private System.Windows.Forms.Label LabelSpamSpeed;
+        private System.Windows.Forms.GroupBox GroupBox3;
+        private System.Windows.Forms.ToolStripSeparator Seperator;
+        private System.Windows.Forms.ToolStripMenuItem InfoMenuStrip;
+        private System.Windows.Forms.Timer TimerLength;
     }
 }
 
