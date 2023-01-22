@@ -113,7 +113,7 @@ namespace SpamBot
         }
         private void GithubMenuStrip_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/yusuftuncay");
+            Process.Start("https://github.com/yusuf0142");
         }
     }
 }
