@@ -34,7 +34,6 @@ namespace SpamBot
             this.InfoMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.SocialsMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.GithubMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this.TwitterMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.SpamSpeedTrackBar = new System.Windows.Forms.TrackBar();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.LabelSpamSpeed = new System.Windows.Forms.Label();
@@ -191,14 +190,7 @@ namespace SpamBot
             this.GithubMenuStrip.Name = "GithubMenuStrip";
             this.GithubMenuStrip.Size = new System.Drawing.Size(180, 22);
             this.GithubMenuStrip.Text = "Github";
-            this.GithubMenuStrip.Click += new System.EventHandler(this.GithubMenuStrip_Click);
-            // 
-            // TwitterMenuStrip
-            // 
-            this.TwitterMenuStrip.Name = "TwitterMenuStrip";
-            this.TwitterMenuStrip.Size = new System.Drawing.Size(180, 22);
-            this.TwitterMenuStrip.Text = "Twitter";
-            this.TwitterMenuStrip.Click += new System.EventHandler(this.TwitterMenuStrip_Click);
+            this.GithubMenuStrip.Click += new System.EventHandler(this.GithubMenuStrip_
             // 
             // SpamSpeedTrackBar
             // 
@@ -294,7 +286,6 @@ namespace SpamBot
         private System.Windows.Forms.ToolStripMenuItem CloseMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem SocialsMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem GithubMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem TwitterMenuStrip;
         private System.Windows.Forms.TrackBar SpamLengthTrackBar;
         private System.Windows.Forms.Label LabelSpamLength;
         private System.Windows.Forms.TrackBar SpamSpeedTrackBar;
