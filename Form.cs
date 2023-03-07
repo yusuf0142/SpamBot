@@ -107,13 +107,9 @@ namespace SpamBot
         {
             MessageBox.Show("How to use the Spambot program:\r\n\r\n1. Enter the text you want to spam in the designated text field.\r\n2. Choose an interval for the spam speed by using the slider.\r\n3. Choose a duration for the spamming, ranging from 1 to 60 seconds.\r\n4. Press the \"start\" button to begin the spamming process.\r\n5. Focus on the text field you want the spam to be sent to.\r\n6. To stop the program, press the \"stop\" button.\r\n7. To set everything back to the default values, use the \"default values\" button.\n\r\nPlease note that spamming is illegal and unethical. Therefore, it is important to use this program only for legitimate and lawful purposes and to obtain proper consent before sending any messages.", "");
         }
-        private void TwitterMenuStrip_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://twitter.com/Ce9Fc4x");
-        }
         private void GithubMenuStrip_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/yusuf0142");
+            Process.Start("https://github.com/yusuftuncay");
         }
     }
 }
